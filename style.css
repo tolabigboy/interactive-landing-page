@@ -1,0 +1,139 @@
+* {
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --desktop-font-header : 0.6013rem;
+    --mobi-font-header: 0.444rem;
+    --desktop-btn : 1rem;
+    --mobi-btn: 7.62rem;
+    --number-height-btn-desktop : 1.15rem;
+    --number-width-btn-desktop : 0.104rem;
+    --number-height-btn-mobi : 0.91rem;
+    --number-width-btn-mobi : 0.18rem;
+    --font-size : 1rem;
+    --btn-color-orange : hsl(25, 97%, 53%);
+    --font-color-header: hsl(0, 0%, 100%);
+    --text-color : hsl(217, 12%, 63%);
+    --text-btn-color : hsl(216, 12%, 54%);
+    --app-bg-color : hsl(213, 19%, 18%);
+    --main-bg-color : hsl(216, 12%, 8%);
+
+}
+body {
+    width: 100%;
+    height: 100%;
+    font-size: var(--font-size);
+    font-family: 'Overpass', sans-serif;
+    background-color: var(--main-bg-color);
+}
+main {
+    padding: 1.2rem;
+}
+.wrapper {
+    margin: 0 auto;
+    background-color: var(--app-bg-color);
+    width: min(400px, 100%);
+    padding: 1rem;
+    border-radius: 1rem;
+    transform: translateY(35%);
+    padding-block: 2.5rem;
+    padding-inline: 1rem;
+
+}
+.border {
+    display: grid;
+    place-content: center;
+    border-radius: 50%;
+    width: 2rem;
+    padding: .6rem;
+    background-color: hsl(213, 14%, 26%);
+}   
+/* .app-tab {
+   
+} */
+.logo-img img {
+    cursor: pointer;
+    width: 12px;
+}
+h1 {
+    color: var(--font-color-header);
+    font-size: 1.5rem;
+    margin-block : 1rem;
+}
+.label-header-app-text p {
+    color: var(--text-color);
+    font-size: .9rem;
+
+}
+.number-Btns {
+    margin-block: 1rem;
+}
+.number-btn {
+    cursor: pointer;
+    width: 14%;
+    border: 0;
+    border-radius: 50%;
+    padding: 1rem;
+    background-color: hsl(213, 14%, 26%);
+}
+.number-btn:not(:first-child) {
+    margin-left: 1rem;
+}
+.number-btn:hover {
+    background-color: var(--btn-color-orange);
+    transition: all ease-in-out .5s;
+}
+.submit-btn {
+    border: 0;
+    border-radius: .5rem;
+    display: grid;
+    width: 100%;
+    padding: .7rem;
+    background-color: var(--btn-color-orange);
+    color: var(--font-color-header);
+    font-weight: 700;
+    margin-top: 1.5rem;
+    cursor: pointer;
+    
+}
+.submit-btn:hover {
+    background-color: var(--font-color-header);
+    color: var(--btn-color-orange);
+    transition: all ease-in-out .5s;
+}
+.hidden {
+    display: none;
+    transition: all ease-in-out .5s;
+}
+.thank--you__App {
+    text-align: center;
+}
+.selection {
+    color: var(--btn-color-orange);
+    background-color: hsl(213, 14%, 26%);
+    border-radius: 1rem;
+    width: 200px;
+    margin: 0 auto;
+    padding: .3rem;
+    margin-block: 1rem;      
+}
+h2 {
+    color: var(--font-color-header);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+
+}
+.thank-you-content{
+    color: var(--text-color);
+}
+.number-btn[data-active]{
+    background-color: hsl(219, 7%, 51%) ;
+}
+.number-btn .clicked {
+    background-color: hsl(219, 7%, 51%) ;
+}
+.clicked {
+    background-color:hsl(210, 3%, 65%) ;
+}
